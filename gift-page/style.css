@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Tajawal", system-ui, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #ffd6e8, #ff9fc4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page {
+  width: 360px;
+  padding: 20px;
+  background: #ffeaf3;
+  border-radius: 25px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  color: #c2185b;
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #b56576;
+  margin-bottom: 20px;
+}
+
+/* كرت الرسالة */
+.card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.card p {
+  color: #ff3366;
+  font-size: 18px;
+}
+
+.small {
+  font-size: 13px;
+  color: #777;
+  margin-top: 8px;
+}
+
+/* كرت العدّاد */
+.countdown-card {
+  background: linear-gradient(180deg, #ff7ba5, #ff4f88);
+  border-radius: 25px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.countdown {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.time-box {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 10px;
+  width: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.time-box span:first-child {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* كرت الظرف */
+.envelope-card {
+  background: #ffe0eb;
+  border-radius: 25px;
+  padding: 20px;
+  text-align: center;
+}
+
+.envelope {
+  width: 160px;
+  height: 90px;
+  margin: 0 auto 15px;
+  border-radius: 15px;
+  background: linear-gradient(180deg, #ff8bb8, #ff5b9a);
+  position: relative;
+}
+
+/* مثل ظرف بسيط */
+.envelope::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #ffb6cf 50%, transparent 50%);
+}
+
+input[type="password"] {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 25px;
+  border: none;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+#open-btn {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 25px;
+  border: none;
+  background: #c2185b;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#open-btn:hover {
+  background: #a1124a;
+}
+
+.secret-message {
+  margin-top: 15px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 15px;
+  color: #ff3366;
+  display: none; /* مخفية افتراضياً */
+}

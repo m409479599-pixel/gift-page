@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>هديتك الخاصة</title>
+
+  <!-- هنا مكانه -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="page">
+    <!-- عنوان -->
+    <h1 class="title">ذكرياتنا 💖</h1>
+    <p class="subtitle">كل لحظة معك أغلى من الدنيا</p>
+
+    <!-- كرت الرسالة -->
+    <div class="card">
+      <p>في وجودك يصبح كل شيء أجمل ❤️</p>
+      <p class="small">– بكل الحب –</p>
+    </div>
+
+    <!-- العدّاد -->
+    <div class="countdown-card">
+      <p>من 03-10-2025</p>
+      <div id="countdown" class="countdown">
+        <div class="time-box"><span id="days">0</span><span>يوم</span></div>
+        <div class="time-box"><span id="hours">0</span><span>ساعة</span></div>
+        <div class="time-box"><span id="minutes">0</span><span>دقيقة</span></div>
+        <div class="time-box"><span id="seconds">0</span><span>ثانية</span></div>
+      </div>
+      <p class="small">كل ثانية أحبك أكثر ❤️</p>
+    </div>
+
+    <!-- كلمة السر والظرف -->
+    <div class="envelope-card">
+      <h2>هديتك الخاصة ✉️</h2>
+      <p>أدخلي كلمة السر لفتح الظرف</p>
+
+      <div class="envelope"></div>
+
+      <input
+        type="password"
+        id="password-input"
+        placeholder="كلمة السر..."
+      />
+      <button id="open-btn">افتح الظرف ✉️</button>
+
+      <div id="secret-message" class="secret-message">
+        وانت معايا، الدنيا أحلى 💕
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
